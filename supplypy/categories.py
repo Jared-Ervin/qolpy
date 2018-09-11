@@ -14,6 +14,8 @@ def cathist(df, max_depth=10):
     a count of unique values less than or equal to the max_depth.
     """
 
+    assert type(df) == pd.core.frame.DataFrame
+    def
     df['frequency'] = df.index
     for col in df:
         if len(df.loc[:, col].drop_duplicates()) <= max_depth:
