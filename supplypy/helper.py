@@ -1,9 +1,3 @@
-'''Script to execute promo code sales report'''
-
-import os
-import win32com.client
-
-
 def run_macro(LOCATION, MACRO):
     """
     Executes a macro in an excel file
@@ -13,6 +7,7 @@ def run_macro(LOCATION, MACRO):
         MACRO {str} -- The name of the macro in the excel file
             (ex: module1.macro_name)
     """
+    import win32com.client
 
     APP = "Excel.Application"
     EXCEL = win32com.client.DispatchEx(APP)
