@@ -1,5 +1,5 @@
 import pandas as pd
-import matplotlib.pyplot as plt
+from matplotlib import pyplot as plt
 
 
 def category_to_hist(df, max_values=10):
