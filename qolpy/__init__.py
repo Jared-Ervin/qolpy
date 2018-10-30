@@ -13,5 +13,5 @@ del hard_dependencies, dependency, missing_dependencies
 
 
 from .categories import *
-from .helper import *
+from .other import *
 from .retrieve import *
