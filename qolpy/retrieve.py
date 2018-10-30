@@ -79,10 +79,3 @@ def ez_execute(query, engine):
 
     return data
 
-
-print(
-    ez_execute(
-        "select top 10 * from hmwallacedata.dbo.netsuitetransactions", ez_connect()
-    )
-)
-
