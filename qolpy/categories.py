@@ -26,9 +26,9 @@ def category_to_hist(df, max_values=10):
             plt.tick_params(
                 axis="x", which="both", bottom=False, top=False, labelbottom=False
             )
-            plt.legend(loc="center left", bbox_to_anchor=(1, 0.5))
             plt.xlabel(col)
             plt.ylabel("Count of Observations")
+            plt.show()
     df.drop("frequency", 1, inplace=True)
 
 
